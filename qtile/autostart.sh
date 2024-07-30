@@ -19,4 +19,4 @@ run nitrogen --restore  &
 # run conky -c Downloads/conky/gotham &
 
 # systray volume
-volumeicon & 
+pa-applet & 
