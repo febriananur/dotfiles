@@ -17,6 +17,7 @@ Do This First :
 14 │ fc-cache -f -v <br>
 15 │ sudo pacman -S pulseaudio <br>
 16 │ sudo pacman -S nitrogen <br>
+17 | yay -S pa-applet-git
 
 
 pipewire config
