@@ -127,23 +127,23 @@ primary_widgets = [
     widget.Clock(**base(bg='dark4',fg='color4'), format='%d/%m/%Y - %H:%M '),
 
     
-    separatorl('dark4', 'dark4'),
+    # separatorl('dark4', 'dark4'),
 
-    powerline('dark5', 'dark4'),
+#     powerline('dark5', 'dark4'),
 
-    icon(bg="dark5",fg='color5', text=' '),
+#     icon(bg="dark5",fg='color5', text=' '),
     
-    # widget.Volume(**base(bg='color1')),
+#     # widget.Volume(**base(bg='color1')),
 
-# must install "pip install pulsectl-asyncio for code below"
-    widget.PulseVolume(
-        **base(bg='dark5',fg='color5'),
-        check_mute_string=['on'],
-        ),
+# # must install "pip install pulsectl-asyncio for code below"
+#     widget.PulseVolume(
+#         **base(bg='dark5',fg='color5'),
+#         check_mute_string=['on'],
+#         ),
 
-    separatorl('color6', 'dark5'),
+    # separatorl('color6', 'dark4'),
 
-    powerline('color6', 'dark5'),
+    powerline('color6', 'dark4'),
 
 
     widget.Systray(background=colors['color6'], padding=10),

@@ -12,11 +12,12 @@ function run {
 # cbatticon -u 5 &
 
 # run nitrogen --restore  &
-run picom &
+#run picom &
 #picom --backend glx -b
 run nm-applet &
+run pa-applet &
 run nitrogen --restore  &
 # run conky -c Downloads/conky/gotham &
 
 # systray volume
-pa-applet & 
+volumeicon & 
