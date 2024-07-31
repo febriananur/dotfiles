@@ -1,4 +1,3 @@
-
 # Dotfiles Qtile
 
 My Personal Qtile dotfiles
@@ -26,16 +25,21 @@ My Personal Qtile dotfiles
                    
 ```
     
-## Pipewire fix audio on VM
 
+## FIX lag pipewire
 
+config pipewire
+
+```bash
 sudo cp /usr/share/pipewire/pipewire.conf /etc/pipewire/ 
 mkdir -p ~/.config/wireplumber/main.lua.d 
 mkdir -p ~/.config/wireplumber/wireplumber.conf.d 
 cd ~/.config/wireplumber/wireplumber.conf.d 
 cp /usr/share/wireplumber/wireplumber.conf.d/alsa-vm.conf .
+nano ~/.config/wireplumber/wireplumber.conf.d/alsa-vm.conf
 
-Then open ~/.config/wireplumber/wireplumber.conf.d/alsa-vm.conf in an editor and tweak the configuration at the very bottom of the file to suit the needs. Like:
+```
+    
 
 ```
 
